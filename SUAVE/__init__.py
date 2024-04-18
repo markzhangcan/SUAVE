@@ -23,6 +23,7 @@ from . import Plots
 from .Vehicle import Vehicle
 
 from warnings import simplefilter
-simplefilter('ignore')
 
-from SUAVE.version import version as __version__
+simplefilter("ignore")
+
+__version__ = "2.5.2"
