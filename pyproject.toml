@@ -1,0 +1,24 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "SUAVE"
+version = "0.0.1"
+description = "SUAVE without the warcrimes"
+authors = ["Mark"]
+readme = "README.md"
+packages = [{include = "SUAVE"}]
+include = [{path = "SUAVE", format = "sdist"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: MacOS, Windows, Linux",
+]
+ 
+[tool.poetry.dependencies]
+python = ">3.8"
+numpy = ">=1.24.2"
+scipy = ">=1.10.1"
+sklearn = ">=0.0.1"
+plotly = ">=0.0.1"
+matplotlib = ">=0.0.1"
